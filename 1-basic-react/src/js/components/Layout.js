@@ -4,20 +4,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 export default class Layout extends React.Component {
-  constructor() {
-    super();
-    this.state = { name: "Will" };
-  }
-
   render() {
-    setTimeout(
-      () => { this.setState({ name: "Bob" }); }
-    , 1000);
+    const title = "Welcome Will!";
 
     return (
       <div>
-        {this.state.name}
-        <Header />
+        <Header title={title} />
         <Footer />
       </div>
     );
