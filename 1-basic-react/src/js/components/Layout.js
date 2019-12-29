@@ -1,14 +1,13 @@
 import React from "react";
 
-export default class Layout extends React.Component {
-  constructor() {
-    super();
-    this.name = "Will";
-  }
+import Header from "./Header";
 
+export default class Layout extends React.Component {
   render() {
     return (
-      <h1>It's {this.name}!</h1>
+      <div>
+        <Header />
+      </div>
     );
   }
 }
