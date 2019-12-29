@@ -12,7 +12,10 @@ module.exports = {
       use: [{
         loader: 'babel-loader',
         options: {
-          plugins: ['react-html-attrs'],
+          plugins: [
+            'react-html-attrs',
+            ['@babel/plugin-proposal-class-properties', { 'loose': true }]
+          ],
           presets: ['@babel/preset-react', '@babel/preset-env']
         }
       }]
